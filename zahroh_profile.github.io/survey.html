@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url(img/zoo.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <head>
+        <title>survey kepuasan pelanggan</title>
+    </head>
+    <body>
+        <b>survey kepuasan pelanggan: </b> <br>
+        
+        <form action="#" method="POST" onsubmit="alert('Terima kasih, data survey anda sudah terkirim!');">
+            
+            <table>
+                <tr>
+                    <td>Nama</td>
+                    <td>: <input type="text" name="nama" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>: <input type="text" name="alamat" size="50"></td>
+                </tr>
+                <tr>
+                    <td>No.Telp</td>
+                    <td>: <input type="text" name="telp" size="15"></td>
+                </tr>
+            </table>
+
+            <br>
+
+            <label>kategori pelanggan</label>
+            <select name="kategori">
+                <option value="baru">pelanggan baru</option>
+                <option value="setia">pelanggan setia</option>
+                <option value="biasa">pelanggan biasa</option>
+            </select>
+            
+            <br><br>
+            makanan yang disukai: <br>
+            <input type="checkbox" name="makanan" value="menu 1"> New York Cheesecake<br>
+            <input type="checkbox" name="makanan" value="menu 2"> Sernik(polandia)<br>
+            <input type="checkbox" name="makanan" value="menu 3"> Ricotta Cheesecake<br>
+
+            <br>
+            minuman yang disukai: <br>
+            <input type="checkbox" name="minuman" value="menu 1"> Boba Milk Tea<br>
+            <input type="checkbox" name="minuman" value="menu 2"> coklat hangat<br>
+            <br>
+            tingkat kepuasan pelanggan: <br>
+            <input type="radio" name="puas" value="sangat puas">sangat puas<br>
+            <input type="radio" name="puas" value="puas">puas<br>
+            <input type="radio" name="puas" value="tidak puas">tidak puas<br>
+            <input type="radio" name="puas" value="kecewa">kecewa<br>
+
+            <br>
+
+            <b>komentar:</b> <br>
+            <textarea rows="10" cols="40" wrap="physical" name="komentar"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="kirim">
+            <input type="reset" value="reset">
+            
+        </form> </body>
